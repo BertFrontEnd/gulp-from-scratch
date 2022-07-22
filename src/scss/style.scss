@@ -1,0 +1,67 @@
+@import 'fonts.scss';
+
+body {
+  background-color: #cecece;
+
+  .header {
+    color: yellow;
+
+    img {
+      width: 50px;
+      height: auto;
+    }
+
+    span {
+      display: block;
+      background-image: url('.@img/gulp.jpeg');
+      width: 50px;
+      height: 50px;
+      background-color: gold;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: 0.5s;
+    }
+  }
+
+  .main {
+    img {
+      width: 50px;
+      height: auto;
+    }
+
+    p {
+      font-family: 'CormorantUpright';
+    }
+  }
+
+  .footer {
+    font-family: 'NotoSansDisplayCondensed';
+
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    .header {
+      span {
+        width: 75px;
+        height: 75px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    .header {
+      span {
+        background-color: indigo;
+        border-radius: 50%;
+      }
+    }
+  }
+}
